@@ -19,6 +19,21 @@ export const theme = createTheme({
     primary: {
       main: appPallete[500],
       light: appPallete[50]
+    },
+    error: {
+      main: '#E53E3E',
+      light: '#FC8181'
+    },
+    warning: {
+      main: '#ECC94B',
+      light: '#FAF089'
+    },
+    success: {
+      main: '#38A169',
+      light: '#68D391'
+    },
+    secondary: {
+      main: '#A0AEC0'
     }
   }
 });

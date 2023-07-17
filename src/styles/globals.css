@@ -26,3 +26,8 @@ main#main.closed {
 main#main.strech {
   max-width: calc(100% - var(--sideNav-strech-width));
 }
+
+.file-droper {
+  width: 400px;
+  height: 200px;
+}

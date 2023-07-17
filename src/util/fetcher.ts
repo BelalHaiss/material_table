@@ -1,8 +1,9 @@
 import axios from 'axios';
+import { HTTP_METHOD } from 'next/dist/server/web/http';
 let token: string | null;
 export type ARGS = {
   url: string;
-  requestOption?: { method: string; data?: any };
+  requestOption?: { method: HTTP_METHOD; data?: any };
 };
 
 axios.defaults.baseURL = process.env.NEXT_PUBLIC_SERVER_HOST;

@@ -1,6 +1,7 @@
 import { type } from 'os';
 
 export interface Q_schema {
+  _id: string;
   question: string;
   answer: string[];
   correctAnswer: number;
@@ -25,6 +26,7 @@ export interface Q_Response {
 }
 
 export interface Q_Data {
+  _id: string;
   question: string;
   answer: string[]; // this answer is 2 length only and the correct answer below is the third item
   correctAnswer: string;
@@ -70,3 +72,25 @@ export type Q_Diffucilty =
   | 'Medium'
   | 'Hard'
   | 'Very Hard';
+
+export type Q_Sheet = {
+  Answers: string;
+  'Choiche No.1': string;
+  'Choice No.2': string;
+  'Choice No.3': string;
+  Difficulty: SHEET_DIFFICULTY;
+  'Level 1 Tag': string;
+  'Level 1-Plus Tag-': string;
+  'Level 2 Tag': string;
+  'Level 2-Plus Tag-': string;
+  'Level 3 Tag': string;
+  Questions: string;
+  Time: string;
+};
+
+export type SHEET_DIFFICULTY =
+  | 'متوسط'
+  | 'سهل'
+  | 'صعب'
+  | 'صعب جداً'
+  | 'سهل جداً';
